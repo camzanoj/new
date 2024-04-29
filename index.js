@@ -8,4 +8,5 @@ router.get('/', function(req, res){
 });
 
 app.use('/',router);
+app.use(express.static(path.join(__dirname, '/')));
 app.listen(process.env.port || 3000);
